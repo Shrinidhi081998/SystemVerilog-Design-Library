@@ -1,0 +1,916 @@
+$date
+	Thu Jul  2 02:05:40 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_extras $end
+$var wire 1 ! spi_miso $end
+$var wire 1 " tl_yellow $end
+$var wire 1 # tl_red $end
+$var wire 1 $ tl_green $end
+$var wire 1 % sr_sout $end
+$var wire 8 & sr_par_out [7:0] $end
+$var wire 1 ' spi_sclk $end
+$var wire 8 ( spi_rx [7:0] $end
+$var wire 1 ) spi_mosi $end
+$var wire 1 * spi_done $end
+$var wire 1 + spi_cs_n $end
+$var wire 1 , spi_busy $end
+$var wire 1 - seq_det $end
+$var wire 64 . rf_rd_data [63:0] $end
+$var wire 1 / pe_valid $end
+$var wire 3 0 pe_out [2:0] $end
+$var reg 1 1 clk $end
+$var reg 8 2 pe_in [7:0] $end
+$var reg 8 3 rf_rd_addr [7:0] $end
+$var reg 4 4 rf_wr_addr [3:0] $end
+$var reg 32 5 rf_wr_data [31:0] $end
+$var reg 1 6 rf_wr_en $end
+$var reg 1 7 rst_n $end
+$var reg 1 8 seq_din $end
+$var reg 1 9 spi_start $end
+$var reg 8 : spi_tx [7:0] $end
+$var reg 2 ; sr_mode [1:0] $end
+$var reg 8 < sr_par_in [7:0] $end
+$var reg 1 = sr_sin $end
+$var integer 32 > tot_checks [31:0] $end
+$var integer 32 ? tot_errors [31:0] $end
+$scope module u_pe $end
+$var wire 8 @ in [7:0] $end
+$var parameter 32 A N $end
+$var parameter 32 B OW $end
+$var reg 3 C out [2:0] $end
+$var reg 1 / valid $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 D i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module u_rf $end
+$var wire 1 1 clk $end
+$var wire 8 E rd_addr [7:0] $end
+$var wire 1 7 rst_n $end
+$var wire 4 F wr_addr [3:0] $end
+$var wire 32 G wr_data [31:0] $end
+$var wire 1 6 wr_en $end
+$var parameter 32 H ADDRBITS $end
+$var parameter 32 I NREAD $end
+$var parameter 32 J NREGS $end
+$var parameter 32 K WIDTH $end
+$var reg 64 L rd_data [63:0] $end
+$scope begin $ivl_for_loop1 $end
+$var integer 32 M i [31:0] $end
+$upscope $end
+$scope begin $ivl_for_loop2 $end
+$var integer 32 N p [31:0] $end
+$upscope $end
+$upscope $end
+$scope module u_seq $end
+$var wire 1 1 clk $end
+$var wire 1 - detected $end
+$var wire 1 8 din $end
+$var wire 1 7 rst_n $end
+$var reg 2 O state [1:0] $end
+$upscope $end
+$scope module u_spi $end
+$var wire 1 1 clk $end
+$var wire 1 ! miso $end
+$var wire 1 7 rst_n $end
+$var wire 1 ' sclk $end
+$var wire 1 9 start $end
+$var wire 8 P tx_data [7:0] $end
+$var wire 1 , busy $end
+$var parameter 32 Q CLKS_PER_HALF $end
+$var parameter 32 R CW $end
+$var parameter 32 S WIDTH $end
+$var reg 4 T bit_idx [3:0] $end
+$var reg 1 + cs_n $end
+$var reg 1 * done $end
+$var reg 2 U hcnt [1:0] $end
+$var reg 1 ) mosi $end
+$var reg 8 V rx_data [7:0] $end
+$var reg 8 W rx_r [7:0] $end
+$var reg 1 X sclk_r $end
+$var reg 2 Y state [1:0] $end
+$var reg 8 Z tx_r [7:0] $end
+$upscope $end
+$scope module u_sr $end
+$var wire 1 1 clk $end
+$var wire 2 [ mode [1:0] $end
+$var wire 8 \ par_in [7:0] $end
+$var wire 8 ] par_out [7:0] $end
+$var wire 1 7 rst_n $end
+$var wire 1 = sin $end
+$var wire 1 % sout $end
+$var parameter 32 ^ WIDTH $end
+$var reg 8 _ reg_r [7:0] $end
+$upscope $end
+$scope module u_tl $end
+$var wire 1 1 clk $end
+$var wire 1 7 rst_n $end
+$var wire 1 " yellow $end
+$var wire 1 # red $end
+$var wire 1 $ green $end
+$var parameter 32 ` GREEN_TIME $end
+$var parameter 32 a RED_TIME $end
+$var parameter 32 b YELLOW_TIME $end
+$var reg 2 c cnt [1:0] $end
+$var reg 2 d state [1:0] $end
+$upscope $end
+$scope begin $unm_blk_34 $end
+$var integer 32 e cnt_wait [31:0] $end
+$upscope $end
+$scope begin $unm_blk_41 $end
+$var integer 32 f det_count [31:0] $end
+$upscope $end
+$scope task test_pe $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 b
+b11 a
+b100 `
+b1000 ^
+b1000 S
+b10 R
+b10 Q
+b100000 K
+b10000 J
+b10 I
+b100 H
+b11 B
+b1000 A
+$end
+#0
+$dumpvars
+bx f
+b0 e
+b0 d
+b0 c
+b0 _
+b0 ]
+b0 \
+b0 [
+b0 Z
+b0 Y
+0X
+b0 W
+bx V
+b0 U
+b0 T
+b0 P
+b0 O
+b10 N
+b10000 M
+bx L
+bx G
+bx F
+bx E
+b11111111111111111111111111111111 D
+b0 C
+b0 @
+b0 ?
+b0 >
+0=
+b0 <
+b0 ;
+b0 :
+09
+08
+07
+06
+bx 5
+bx 4
+bx 3
+b0 2
+01
+b0 0
+0/
+bx .
+0-
+0,
+1+
+0*
+0)
+bx (
+0'
+b0 &
+0%
+1$
+0#
+0"
+x!
+$end
+#2000
+0!
+#5000
+b10000 M
+11
+#10000
+01
+#15000
+b10000 M
+11
+#20000
+01
+#25000
+b1 c
+17
+11
+#30000
+01
+#35000
+b10 c
+b11111111111111111111111111111111 D
+1/
+b1 2
+b1 @
+11
+#36000
+b1 0
+b1 C
+b11111111111111111111111111111111 D
+b10 2
+b10 @
+b1 >
+#37000
+b11111111111111111111111111111111 D
+b111 0
+b111 C
+b10000000 2
+b10000000 @
+b10 >
+#38000
+b11111111111111111111111111111111 D
+b1 0
+b1 C
+b11010110 2
+b11010110 @
+b11 >
+#39000
+b11111111111111111111111111111111 D
+0/
+b0 0
+b0 C
+b0 2
+b0 @
+b100 >
+#40000
+b101 >
+01
+#45000
+b11 c
+11
+#50000
+b10100101 <
+b10100101 \
+b10 ;
+b10 [
+01
+#55000
+1%
+b10100101 &
+b10100101 ]
+b10100101 _
+0$
+1"
+b1 d
+b0 c
+11
+#60000
+b1 ;
+b1 [
+01
+#65000
+0%
+b1 c
+b1001010 &
+b1001010 ]
+b1001010 _
+11
+#70000
+01
+#75000
+1%
+b10010100 &
+b10010100 ]
+b10010100 _
+0"
+1#
+b10 d
+b0 c
+11
+#80000
+01
+#85000
+0%
+b1 c
+b101000 &
+b101000 ]
+b101000 _
+11
+#90000
+01
+#95000
+b1010000 &
+b1010000 ]
+b1010000 _
+b10 c
+11
+#100000
+01
+#105000
+1%
+1$
+0#
+b0 d
+b0 c
+b10100000 &
+b10100000 ]
+b10100000 _
+11
+#110000
+01
+#115000
+0%
+b1000000 &
+b1000000 ]
+b1000000 _
+b1 c
+11
+#120000
+01
+#125000
+1%
+b10 c
+b10000000 &
+b10000000 ]
+b10000000 _
+11
+#130000
+01
+#135000
+0%
+b0 &
+b0 ]
+b0 _
+b11 c
+11
+#140000
+b110 >
+01
+#145000
+0$
+1"
+b1 d
+b0 c
+11
+#150000
+b11 ;
+b11 [
+01
+#155000
+b1 c
+b111 >
+11
+#160000
+b10 N
+b11011110101011011011111011101111 5
+b11011110101011011011111011101111 G
+b101 4
+b101 F
+16
+01
+#165000
+b10 N
+0"
+1#
+b10 d
+b0 c
+11
+#170000
+b11011110101011011011111011101111 .
+b11011110101011011011111011101111 L
+b10 N
+b101 3
+b101 E
+06
+01
+#171000
+b1001 >
+#175000
+b1 c
+11
+#180000
+b11001010111111101011101010111110 .
+b11001010111111101011101010111110 L
+b10 N
+b11 3
+b11 E
+b11001010111111101011101010111110 5
+b11001010111111101011101010111110 G
+b11 4
+b11 F
+16
+01
+#181000
+b1010 >
+#185000
+b10 N
+b10 c
+11
+#190000
+b10 N
+06
+01
+#195000
+1$
+0#
+b0 d
+b0 c
+b1 e
+11
+#200000
+01
+#205000
+b1 c
+b1011 >
+b0 e
+11
+#210000
+01
+#215000
+b10 c
+b1 e
+11
+#220000
+01
+#225000
+b11 c
+b10 e
+11
+#230000
+01
+#235000
+0$
+1"
+b1 d
+b0 c
+b11 e
+11
+#240000
+01
+#245000
+b1 c
+b1100 >
+b0 e
+11
+#250000
+01
+#255000
+0"
+1#
+b10 d
+b0 c
+b1 e
+11
+#260000
+01
+#265000
+b1 c
+b0 f
+b1101 >
+b10 e
+11
+#270000
+01
+#275000
+b10 c
+11
+#280000
+01
+#285000
+1$
+0#
+b0 d
+b0 c
+11
+#290000
+18
+01
+#295000
+b1 c
+b1 O
+11
+#300000
+08
+01
+#305000
+b10 O
+b10 c
+11
+#310000
+18
+01
+#315000
+1-
+b11 c
+b11 O
+11
+#320000
+01
+#325000
+0-
+b1 O
+0$
+1"
+b1 d
+b0 c
+b1 f
+11
+#330000
+08
+01
+#335000
+b1 c
+b10 O
+11
+#340000
+18
+01
+#345000
+1-
+b11 O
+0"
+1#
+b10 d
+b0 c
+11
+#350000
+01
+#355000
+0-
+b1 c
+b1 O
+b1110 >
+b10 f
+11
+#360000
+19
+b1111110 :
+b1111110 P
+01
+#365000
+1,
+b1 Y
+0+
+b111 T
+b1111110 Z
+b10 c
+11
+#370000
+09
+01
+#375000
+1$
+0#
+b0 d
+b0 c
+b1 U
+11
+#380000
+01
+#385000
+1'
+1X
+b0 U
+b1 c
+11
+#390000
+01
+#395000
+b10 c
+b1 U
+11
+#400000
+01
+#405000
+1)
+b110 T
+0'
+0X
+b0 U
+b11 c
+11
+#407000
+1!
+#410000
+01
+#415000
+0$
+1"
+b1 d
+b0 c
+b1 U
+11
+#420000
+01
+#425000
+b1 W
+1'
+1X
+b0 U
+b1 c
+11
+#430000
+01
+#435000
+0"
+1#
+b10 d
+b0 c
+b1 U
+11
+#440000
+01
+#445000
+b101 T
+0'
+0X
+b0 U
+b1 c
+11
+#450000
+01
+#455000
+b10 c
+b1 U
+11
+#460000
+01
+#465000
+b11 W
+1'
+1X
+b0 U
+1$
+0#
+b0 d
+b0 c
+11
+#470000
+01
+#475000
+b1 c
+b1 U
+11
+#480000
+01
+#485000
+b100 T
+0'
+0X
+b0 U
+b10 c
+11
+#490000
+01
+#495000
+b11 c
+b1 U
+11
+#500000
+01
+#505000
+b111 W
+1'
+1X
+b0 U
+0$
+1"
+b1 d
+b0 c
+11
+#510000
+01
+#515000
+b1 c
+b1 U
+11
+#520000
+01
+#525000
+b11 T
+0'
+0X
+b0 U
+0"
+1#
+b10 d
+b0 c
+11
+#530000
+01
+#535000
+b1 c
+b1 U
+11
+#540000
+01
+#545000
+b1111 W
+1'
+1X
+b0 U
+b10 c
+11
+#550000
+01
+#555000
+1$
+0#
+b0 d
+b0 c
+b1 U
+11
+#560000
+01
+#565000
+b10 T
+0'
+0X
+b0 U
+b1 c
+11
+#570000
+01
+#575000
+b10 c
+b1 U
+11
+#580000
+01
+#585000
+b11111 W
+1'
+1X
+b0 U
+b11 c
+11
+#590000
+01
+#595000
+0$
+1"
+b1 d
+b0 c
+b1 U
+11
+#600000
+01
+#605000
+b1 T
+0'
+0X
+b0 U
+b1 c
+11
+#610000
+01
+#615000
+0"
+1#
+b10 d
+b0 c
+b1 U
+11
+#620000
+01
+#625000
+b111111 W
+1'
+1X
+b0 U
+b1 c
+11
+#630000
+01
+#635000
+b10 c
+b1 U
+11
+#640000
+01
+#645000
+0)
+b0 T
+0'
+0X
+b0 U
+1$
+0#
+b0 d
+b0 c
+11
+#647000
+0!
+#650000
+01
+#655000
+b1 c
+b1 U
+11
+#660000
+01
+#665000
+b10 Y
+b1111110 W
+1'
+1X
+b0 U
+b10 c
+11
+#670000
+01
+#675000
+b11 c
+0,
+b0 Y
+b1111110 (
+b1111110 V
+1*
+0'
+0X
+1+
+11
+#680000
+b1111 >
+01
+#685000
+0*
+0$
+1"
+b1 d
+b0 c
+11
+#690000
+01
+#695000
+b1 c
+11
+#700000
+01
+#705000
+0"
+1#
+b10 d
+b0 c
+11
+#710000
+01
+#715000
+b1 c
+11
+#720000
+01
+#725000
+b10 c
+11
+#730000
+01
+#735000
+1$
+0#
+b0 d
+b0 c
+11
+#740000
+01
+#745000
+b1 c
+11
+#750000
+01
+#755000
+b10 c
+11
+#760000
+01
+#765000
+b11 c
+11
+#770000
+01
+#775000
+0$
+1"
+b1 d
+b0 c
+11
+#780000
+01

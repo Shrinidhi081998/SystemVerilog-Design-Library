@@ -1,0 +1,174 @@
+$date
+	Wed Jul  1 19:58:01 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_fixed_priority_arbiter $end
+$var wire 4 ! grant [3:0] $end
+$var parameter 32 " N $end
+$var reg 4 # req [3:0] $end
+$var integer 32 $ checks [31:0] $end
+$var integer 32 % errors [31:0] $end
+$scope function expected_grant $end
+$scope begin $ivl_for_loop1 $end
+$upscope $end
+$upscope $end
+$scope module dut $end
+$var wire 4 & req [3:0] $end
+$var parameter 32 ' N $end
+$var reg 4 ( grant [3:0] $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 ) i [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin $ivl_for_loop2 $end
+$var integer 32 * r [31:0] $end
+$upscope $end
+$scope task check $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 '
+b100 "
+$end
+#0
+$dumpvars
+b0 *
+b100 )
+b0 (
+b0 &
+b0 %
+b0 $
+b0 #
+b0 !
+$end
+#1000
+b1 !
+b1 (
+b100 )
+b1 #
+b1 &
+b1 *
+b1 $
+#2000
+b100 )
+b10 !
+b10 (
+b10 #
+b10 &
+b10 *
+b10 $
+#3000
+b100 )
+b1 !
+b1 (
+b11 #
+b11 &
+b11 *
+b11 $
+#4000
+b100 )
+b100 !
+b100 (
+b100 #
+b100 &
+b100 *
+b100 $
+#5000
+b100 )
+b1 !
+b1 (
+b101 #
+b101 &
+b101 *
+b101 $
+#6000
+b100 )
+b10 !
+b10 (
+b110 #
+b110 &
+b110 *
+b110 $
+#7000
+b100 )
+b1 !
+b1 (
+b111 #
+b111 &
+b111 *
+b111 $
+#8000
+b100 )
+b1000 !
+b1000 (
+b1000 #
+b1000 &
+b1000 *
+b1000 $
+#9000
+b100 )
+b1 !
+b1 (
+b1001 #
+b1001 &
+b1001 *
+b1001 $
+#10000
+b100 )
+b10 !
+b10 (
+b1010 #
+b1010 &
+b1010 *
+b1010 $
+#11000
+b100 )
+b1 !
+b1 (
+b1011 #
+b1011 &
+b1011 *
+b1011 $
+#12000
+b100 )
+b100 !
+b100 (
+b1100 #
+b1100 &
+b1100 *
+b1100 $
+#13000
+b100 )
+b1 !
+b1 (
+b1101 #
+b1101 &
+b1101 *
+b1101 $
+#14000
+b100 )
+b10 !
+b10 (
+b1110 #
+b1110 &
+b1110 *
+b1110 $
+#15000
+b100 )
+b1 !
+b1 (
+b1111 #
+b1111 &
+b1111 *
+b1111 $
+#16000
+b10000 *
+b10000 $
+#36000
